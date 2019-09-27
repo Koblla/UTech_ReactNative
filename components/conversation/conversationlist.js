@@ -30,7 +30,12 @@ export default class Conversationlist extends React.Component {
 
       <View style={styles.conversationlist}>
         <View>
-          <TextInput placeholder='Search Username' style={styles.input} />
+
+          <TextInput style={styles.input}
+            placeholder='Search Username'
+            placeholderTextColor='#DCDCDC'
+            returnKeyType='search'
+          />
         </View>
         <ScrollView>
           <View>
@@ -56,7 +61,6 @@ export default class Conversationlist extends React.Component {
           </View>
         </ScrollView>
       </View>
-
 
     )
   }
