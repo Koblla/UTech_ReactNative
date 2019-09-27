@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextInput, StyleSheet, Text, View } from 'react-native'
+import { ScrollView, TextInput, StyleSheet, Text, View } from 'react-native'
 import Conversation from './conversation'
 
 export default class Conversationlist extends React.Component {
@@ -12,7 +12,8 @@ export default class Conversationlist extends React.Component {
         backgroundColor: '#4d4dff'
       },
       input: {
-        marginTop: 20,
+        marginTop: 25,
+        marginBottom: 20,
         marginLeft: 20,
         marginRight: 20,
         paddingLeft: 20,
@@ -26,16 +27,36 @@ export default class Conversationlist extends React.Component {
       }
     })
     return (
+
       <View style={styles.conversationlist}>
         <View>
           <TextInput placeholder='Search Username' style={styles.input} />
         </View>
-        <View>
-          <Conversation />
-          <Conversation />
-          <Conversation />
-        </View>
+        <ScrollView>
+          <View>
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+            <Conversation />
+          </View>
+        </ScrollView>
       </View>
+
 
     )
   }

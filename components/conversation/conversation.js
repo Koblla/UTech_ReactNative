@@ -1,5 +1,5 @@
 import React from 'react'
-import { TextInput, StyleSheet, Text, View } from 'react-native'
+import { TouchableOpacity ,TextInput, StyleSheet, Text, View } from 'react-native'
 
 export default class Conversation extends React.Component {
   render () {
@@ -24,7 +24,7 @@ export default class Conversation extends React.Component {
 
     return (
 
-      <View style={styles.conversation}>
+      <TouchableOpacity style={styles.conversation}>
         <View>
           <Text> Name Lastname </Text>
         </View>
@@ -37,8 +37,7 @@ export default class Conversation extends React.Component {
         <View style={styles.unseen}>
           <Text> 1 </Text>
         </View>
-
-      </View>
+      </TouchableOpacity>
 
     )
   }
