@@ -12,7 +12,7 @@ export default class Messagebox extends React.Component {
       sender: {
         
         alignSelf: 'flex-end',
-        backgroundColor: '#ccccff',
+        backgroundColor: '#99ffff',
         marginRight: 5,
         borderRadius: 5,
         paddingRight: 2,
@@ -22,7 +22,7 @@ export default class Messagebox extends React.Component {
       reciver: {
         
         alignSelf: 'flex-start',
-        backgroundColor: '#ccccff',
+        backgroundColor: '#b3b3ff',
         marginLeft: 5,
         borderRadius: 5,
         paddingLeft: 2,

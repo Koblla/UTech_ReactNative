@@ -6,6 +6,7 @@ import { createStackNavigator } from 'react-navigation-stack'
 
 
 class Conversationlist extends React.Component {
+  static navigationOptions= { headerMode: 'none'}
   render () {
     const styles = StyleSheet.create({
       conversationlist: {

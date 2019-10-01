@@ -12,7 +12,6 @@ export default class Header extends React.Component {
         justifyContent: 'space-between',
         alignItems: 'center',
         marginTop: 13,
-        marginBottom:25
       },
       names: {
         flexDirection: 'row',
@@ -23,7 +22,6 @@ export default class Header extends React.Component {
         justifyContent: 'center',
         borderRadius: 10,
         marginRight: 5,
-        margin: 10
       },
       sendB: {
         justifyContent: 'center',
