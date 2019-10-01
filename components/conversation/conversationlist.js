@@ -1,8 +1,11 @@
 import React from 'react'
 import { ScrollView, TextInput, StyleSheet, Text, View } from 'react-native'
 import Conversation from './conversation'
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
 
-export default class Conversationlist extends React.Component {
+
+class Conversationlist extends React.Component {
   render () {
     const styles = StyleSheet.create({
       conversationlist: {
@@ -39,25 +42,26 @@ export default class Conversationlist extends React.Component {
         </View>
         <ScrollView>
           <View>
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
-            <Conversation />
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
+            <Conversation navigation={this.props.navigation}/>
           </View>
         </ScrollView>
       </View>
@@ -65,3 +69,7 @@ export default class Conversationlist extends React.Component {
     )
   }
 }
+const AppNavigator = createStackNavigator({
+  MainPage: Conversationlist
+});
+export default createAppContainer(AppNavigator);

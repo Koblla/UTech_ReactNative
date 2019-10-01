@@ -11,17 +11,19 @@ export default class Header extends React.Component {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        marginTop: 13
+        marginTop: 13,
+        marginBottom:25
       },
       names: {
         flexDirection: 'row',
         flex: 4,
-        backgroundColor: '#3333ff',
+        backgroundColor: '#b3b3ff',
         paddingVertical: 15,
         alignItems: 'flex-end',
         justifyContent: 'center',
         borderRadius: 10,
-        marginRight: 5
+        marginRight: 5,
+        margin: 10
       },
       sendB: {
         justifyContent: 'center',
@@ -37,7 +39,7 @@ export default class Header extends React.Component {
     })
     return (
       <View style={styles.top}>
-        <TouchableOpacity style={styles.sendB}>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('ConvList')} style={styles.sendB}>
           <Text style={styles.sendT}> Back </Text>
         </TouchableOpacity>
         <View style={styles.names}>

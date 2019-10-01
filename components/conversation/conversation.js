@@ -24,7 +24,7 @@ export default class Conversation extends React.Component {
 
     return (
 
-      <TouchableOpacity style={styles.conversation}>
+      <TouchableOpacity onPress = {()=> this.props.navigation.navigate('ChatScreen')} style={styles.conversation}>
         <View>
           <Text> Name Lastname </Text>
         </View>

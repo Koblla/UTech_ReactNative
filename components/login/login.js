@@ -1,5 +1,7 @@
 import React from 'react'
 import { ImageBackground, Button, TextInput, StyleSheet, Text, View } from 'react-native'
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
 
 export default class Login extends React.Component {
   constructor () {
@@ -65,7 +67,7 @@ export default class Login extends React.Component {
           <Text style={styles.text}> Welcome to our App </Text>
           <TextInput style={styles.input} placeholder='Enter your username' />
           <TextInput style={styles.input} placeholder='Enter your password' />
-          <Button title='Login' style={styles.button} />
+          <Button onPress={() => this.props.navigation.navigate('ConvList')} title='Login' style={styles.button} />
         </View>
       </View>
     )

@@ -19,9 +19,9 @@ export default class ChatScrn extends React.Component {
     })
     return (
       <View style={styles.mainPage}>
-        <Header />
+        <Header navigation= {this.props.navigation}/>
         <Messagebox />
-        <Footer />
+        <Footer navigation= {this.props.navigation}/>
       </View>
     )
   }
