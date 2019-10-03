@@ -1,5 +1,6 @@
 import React from 'react'
 import { ScrollView, TouchableOpacity, TextInput, StyleSheet, Text, View } from 'react-native'
+import {getMessage} from './../../actions.js'
 
 export default class Footer extends React.Component {
   render () {

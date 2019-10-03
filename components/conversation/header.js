@@ -37,7 +37,7 @@ export default class Header extends React.Component {
     })
     return (
       <View style={styles.top}>
-        <TouchableOpacity onPress={() => this.props.navigation.navigate('ConvList')} style={styles.sendB}>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('TabRoute')} style={styles.sendB}>
           <Text style={styles.sendT}> Back </Text>
         </TouchableOpacity>
         <View style={styles.names}>

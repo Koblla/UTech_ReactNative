@@ -67,7 +67,7 @@ export default class Login extends React.Component {
           <Text style={styles.text}> Welcome to our App </Text>
           <TextInput style={styles.input} placeholder='Enter your username' />
           <TextInput style={styles.input} placeholder='Enter your password' />
-          <Button onPress={() => this.props.navigation.navigate('ConvList')} title='Login' style={styles.button} />
+          <Button onPress={() => this.props.navigation.navigate('TabRoute')} title='Login' style={styles.button} />
         </View>
       </View>
     )

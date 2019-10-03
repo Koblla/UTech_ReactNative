@@ -23,7 +23,6 @@ export default class Conversation extends React.Component {
     })
 
     return (
-
       <TouchableOpacity onPress = {()=> this.props.navigation.navigate('ChatPage')} style={styles.conversation}>
         <View>
           <Text> Name Lastname </Text>
@@ -38,7 +37,6 @@ export default class Conversation extends React.Component {
           <Text> 1 </Text>
         </View>
       </TouchableOpacity>
-
     )
   }
 }

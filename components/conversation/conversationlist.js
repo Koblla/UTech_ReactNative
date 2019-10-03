@@ -4,7 +4,6 @@ import Conversation from './conversation'
 import { createAppContainer } from 'react-navigation'
 import { createStackNavigator } from 'react-navigation-stack'
 
-
 class Conversationlist extends React.Component {
   static navigationOptions= { headerMode: 'none'}
   render () {
@@ -33,14 +32,7 @@ class Conversationlist extends React.Component {
     return (
 
       <View style={styles.conversationlist}>
-        <View>
-
-          <TextInput style={styles.input}
-            placeholder='Search Username'
-            placeholderTextColor='#DCDCDC'
-            returnKeyType='search'
-          />
-        </View>
+        
         <ScrollView>
           <View>
             <Conversation navigation={this.props.navigation}/>
@@ -71,6 +63,6 @@ class Conversationlist extends React.Component {
   }
 }
 const AppNavigator = createStackNavigator({
-  MainPage: Conversationlist
+  MainPage: Conversationlist,
 });
 export default createAppContainer(AppNavigator);
